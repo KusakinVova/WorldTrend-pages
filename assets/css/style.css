@@ -1,48 +1,87 @@
 body {
-  font-family: 'Segoe UI', Arial, sans-serif;
-  background: linear-gradient(120deg, #f8fafc 0%, #e0e7ff 100%);
   margin: 0;
-  color: #222;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: var(--color-text, #333);
 }
-nav {
-  background: #6366f1;
-  padding: 1em;
-  text-align: center;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
-nav a {
-  color: #fff;
+
+.main {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.block {
+}
+.block--news {
+  margin-top: 52px;
+}
+.title {
+  margin: 0;
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: var(--color-text, #222);
+  letter-spacing: 1.4px;
+}
+
+.metaData {
+  color: var(--color-text-tertiary, #a2a2a2);
+  display: flex;
+  gap: 10px;
+  font-size: 0.8em;
+}
+.metaData__divider {
+  width: 1px;
+  height: 12px;
+  background-color: var(--color-text-tertiary, #a2a2a2);
+  align-self: center;
+}
+.metaData__time {
+}
+.metaData__group {
+}
+
+.link {
+  background-color: var(--color-bg, #ededed);
+  border: 1px solid var(--color-bg, #ededed);
+  color: var(--color-text-secondary, #595959);
+  padding: 10px 15px;
+  border-radius: 4px;
   text-decoration: none;
-  margin: 0 1em;
-  font-weight: bold;
-  transition: color 0.2s;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
-nav a:hover {
-  color: #a5b4fc;
+.link--active {
+  border: 1px solid var(--color-border, #191919);
+  color: var(--color-text, #222);
 }
-main {
-  max-width: 600px;
-  margin: 2em auto;
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(99, 102, 241, 0.08);
-  padding: 2em;
+
+.link:hover {
+  border-color: var(--color-border, #191919);
+  color: var(--color-text-invert, #ffffff);
+  background-color: var(--color-text-secondary, #595959);
 }
-button {
-  background: #6366f1;
-  color: #fff;
-  border: none;
-  padding: 0.7em 1.5em;
-  border-radius: 8px;
-  font-size: 1em;
-  cursor: pointer;
-  margin-top: 1em;
-  transition: background 0.2s;
+
+.link--white {
+  color: var(--color-text, #222222);
+  background-color: var(--color-bg-secondary, #fcfcfc);
 }
-button:hover {
-  background: #4f46e5;
+
+.link--black {
+  color: var(--color-text-invert, #ffffff);
+  background-color: var(--color-bg-invert, #191919);
 }
-#message {
-  margin-top: 1em;
-  font-size: 1.1em;
-  color: #6366f1;
+
+.link--icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.link--icon img {
+  width: 20px;
+  height: 20px;
 }

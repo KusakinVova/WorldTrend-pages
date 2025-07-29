@@ -1,0 +1,12 @@
+:root {
+  --color-bg: #ededed;
+  --color-bg-secondary: #fcfcfc;
+  --color-bg-invert: #191919;
+
+  --color-text: #191919;
+  --color-text-invert: #ffffff;
+  --color-text-secondary: #595959;
+  --color-text-tertiary: #a2a2a2;
+
+  --color-border: #191919;
+}

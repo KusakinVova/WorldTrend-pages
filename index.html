@@ -5,18 +5,243 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Главная | Простой сайт</title>
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="stylesheet" href="./assets/css/varieble.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/navbar.css" />
+    <link rel="stylesheet" href="./assets/css/slider.css" />
+    <link rel="stylesheet" href="./assets/css/list.css" />
+    <link rel="stylesheet" href="./assets/css/news.css" />
   </head>
   <body>
-    <nav>
-      <a href="index.html">Главная</a>
-      <a href="about.html">О сайте</a>
+    <nav class="navbar container">
+      <img src="./assets/img/logo.svg" alt="WorldTrend" />
+      <ul class="menu">
+        <li class="menu__item">
+          <a class="link" href="chart.html">Charts</a>
+        </li>
+        <li class="menu__item">
+          <a class="link link--active" href="index.html">News</a>
+        </li>
+      </ul>
     </nav>
-    <main>
-      <h1>Добро пожаловать!</h1>
-      <p>Это современный и красивый сайт на HTML, CSS и JavaScript.</p>
-      <button id="helloBtn">Показать приветствие</button>
-      <div id="message"></div>
+    <main class="container">
+      <section class="main">
+        <div class="slider">
+          <div class="slider__item">
+            <img src="./assets/img/news/slider1.png" alt="Slider Image" class="slider__image" />
+            <h2 class="slider__title">
+              Matt Gaetz quits House after he is picked by Trump for attorney general role
+            </h2>
+            <div class="slider__links">
+              <a href="#" class="link link--white slider__link">Explore</a>
+              <a href="#" class="link link--white slider__link link--icon">
+                <img src="./assets/img/arrow-right.svg" alt="Arrow Right" />
+              </a>
+            </div>
+          </div>
+          <!-- <nav class="slider__nav">
+            <button class="slider__button slider__button--prev"></button>
+            <button class="slider__button slider__button--next">-></button>
+          </nav> -->
+        </div>
+        <ul class="list">
+          <li class="list__item item">
+            <h3 class="item__title">World’s largest coral found in the Pacific</h3>
+            <p class="item__text">
+              The coral could be 500 years old and is bigger than a blue whale
+            </p>
+            <div class="metaData">
+              <span class="metaData__time">2 hrs ago </span>
+              <span class="metaData__divider"></span>
+              <span class="metaData__group">Climate</span>
+            </div>
+          </li>
+
+          <li class="list__item item">
+            <h3 class="item__title">Menopause, the other menstrual taboo for Indian women</h3>
+            <p class="item__text">
+              Indian women on average hit menopause a few years earlier than their counterparts in
+              the West, studies show.
+            </p>
+            <div class="metaData">
+              <span class="metaData__time">4 hrs ago</span>
+              <span class="metaData__divider"></span>
+              <span class="metaData__group">Asia</span>
+            </div>
+          </li>
+
+          <li class="list__item item">
+            <h3 class="item__title">
+              Why Canada could become the next nuclear energy 'superpower'
+            </h3>
+            <p class="item__text">
+              With its rich resources, uranium mining companies want Canada to play a key role in
+              fuelling nuclear reactors worldwide.
+            </p>
+            <div class="metaData">
+              <span class="metaData__time">5 hrs ago</span>
+              <span class="metaData__divider"></span>
+              <span class="metaData__group">US & Canada</span>
+            </div>
+          </li>
+
+          <li class="list__item item">
+            <h3 class="item__title">Why does Pharrell's biopic sidestep Blurred Lines?</h3>
+            <p class="item__text">
+              Robin Thicke's Blurred Lines, which Williams co-wrote, is heard briefly on the
+              soundtrack, without referencing the song's infamous plagiarism trial, which left the
+              musician owing $5m to the estate of Marvin Gaye.
+            </p>
+            <div class="metaData">
+              <span class="metaData__time">2 hrs ago</span>
+              <span class="metaData__divider"></span>
+              <span class="metaData__group">Climate</span>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="block block--news">
+        <h2 class="title">Latest News</h2>
+        <div class="news">
+          <div class="news__item">
+            <img src="./assets/img/news/1.png" alt="News" class="news__image" />
+            <h3 class="news__title">Inside the secret summit that tried to stop deadly rap wars</h3>
+            <p class="news__description">
+              Before the east and west coast rap beef of the 1990s boiled over with the murders of
+              Tupac Shakur and Notorious BIG, legendary producer Quincy Jones called a secret
+              meeting at which he appealed for an end to the violence.
+            </p>
+            <div class="metaData">
+              <span class="metaData__time">1 day ago</span>
+              <span class="metaData__divider"></span>
+              <span class="metaData__group">Culture</span>
+            </div>
+          </div>
+
+          <div class="news__item">
+            <img src="./assets/img/news/2.png" alt="News" class="news__image" />
+            <h3 class="news__title">Unemployment rises as pay growth slows again</h3>
+            <p class="news__description">
+              The UK's unemployment rate has risen, official figures suggest, while pay growth
+              continues to slow.
+            </p>
+            <div class="metaData">
+              <span class="metaData__time">15 hrs ago</span>
+              <span class="metaData__divider"></span>
+              <span class="metaData__group">London</span>
+            </div>
+          </div>
+          <div class="news__item">
+            <img src="./assets/img/news/3.png" alt="News" class="news__image" />
+            <h3 class="news__title">When horror hits China, the first instinct is shut it down</h3>
+            <p class="news__description">
+              Chinese society is reeling from a series of deadly attacks. The reaction from
+              authorities is often suppression
+            </p>
+            <div class="metaData">
+              <span class="metaData__time">1 day ago</span>
+              <span class="metaData__divider"></span>
+              <span class="metaData__group">Asia</span>
+            </div>
+          </div>
+          <div class="news__item">
+            <img src="./assets/img/news/4.png" alt="News" class="news__image" />
+            <h3 class="news__title">Zendaya: Working with Tom Holland is 'second nature'</h3>
+            <p class="news__description">
+              The actress tells Vanity Fair that working with her boyfriend is "strangely
+              comfortable".
+            </p>
+            <div class="metaData">
+              <span class="metaData__time">12 hrs ago</span>
+              <span class="metaData__divider"></span>
+              <span class="metaData__group">Culture</span>
+            </div>
+          </div>
+          <div class="news__item">
+            <img src="./assets/img/news/5.png" alt="News" class="news__image" />
+            <h3 class="news__title">Cheap fix floated for plane vapour's climate damage</h3>
+            <p class="news__description">
+              The warming impact of the vapour trails that emerge from airplanes is being discussed
+              at climate gathering.
+            </p>
+            <div class="metaData">
+              <span class="metaData__time">1 day ago</span>
+              <span class="metaData__divider"></span>
+              <span class="metaData__group">climate</span>
+            </div>
+          </div>
+          <div class="news__item">
+            <img src="./assets/img/news/6.png" alt="News" class="news__image" />
+            <h3 class="news__title">Does Kane's criticism expose England cracks?</h3>
+            <p class="news__description">
+              Harry Kane's thinly-veiled criticism of England absentees increases current sense of
+              drift.
+            </p>
+            <div class="metaData">
+              <span class="metaData__time">8 hrs ago</span>
+              <span class="metaData__divider"></span>
+              <span class="metaData__group">Sport</span>
+            </div>
+          </div>
+          <div class="news__item">
+            <img src="./assets/img/news/7.png" alt="News" class="news__image" />
+            <h3 class="news__title">Some players 'lucky enough' to face Pumas - Farrell</h3>
+            <p class="news__description">
+              Andy Farrell welcomes the pressure last week's All Blacks loss has put on Ireland and
+              admits
+            </p>
+            <div class="metaData">
+              <span class="metaData__time">13 hrs ago</span>
+              <span class="metaData__divider"></span>
+              <span class="metaData__group">Sport</span>
+            </div>
+          </div>
+          <div class="news__item">
+            <img src="./assets/img/news/8.png" alt="News" class="news__image" />
+            <h3 class="news__title">How Japan's youngest CEO transformed Hello Kitty</h3>
+            <p class="news__description">
+              As the cute character celebrates her 50th anniversary, the firm behind it is now a
+              trillion yen business.
+            </p>
+            <div class="metaData">
+              <span class="metaData__time">2 day ago</span>
+              <span class="metaData__divider"></span>
+              <span class="metaData__group">Asia</span>
+            </div>
+          </div>
+
+          <div class="news__item news__item--hidden">
+            <img src="./assets/img/news/9.png" alt="News" class="news__image" />
+            <h3 class="news__title">Thailand and Cambodia agree to 'immediate ceasefire'</h3>
+            <p class="news__description">
+              Thailand and Cambodia have agreed to an "immediate and unconditional ceasefire" after
+              five days of fighting at their border killed at least 33 people and displaced tens of
+              thousands.
+            </p>
+            <div class="metaData">
+              <span class="metaData__time">1 day ago</span>
+              <span class="metaData__divider"></span>
+              <span class="metaData__group">Asia</span>
+            </div>
+          </div>
+          <div class="news__item news__item--hidden">
+            <img src="./assets/img/news/10.png" alt="News" class="news__image" />
+            <h3 class="news__title">How personal tragedy motivates India seamer Deep</h3>
+            <p class="news__description">
+              That's what Bengal team-mate Shreevats Goswami jokingly asked Akash Deep after the
+              first innings of the second England versus India Test.
+            </p>
+            <div class="metaData">
+              <span class="metaData__time">7 hrs ago</span>
+              <span class="metaData__divider"></span>
+              <span class="metaData__group">Sport</span>
+            </div>
+          </div>
+        </div>
+        <div class="news__showMoreContainer">
+          <a href="#" class="news__showMore link link--black">Read more</a>
+        </div>
+      </section>
     </main>
     <script src="./assets/js/main.js"></script>
   </body>

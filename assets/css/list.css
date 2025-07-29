@@ -1,0 +1,30 @@
+.list {
+  display: flex;
+  max-width: 346px;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 16px;
+  list-style: none;
+  margin: 0;
+  padding: 20px;
+  background-color: var(--color-bg, #ededed);
+}
+.list__item {
+}
+.item__title {
+  font-size: 1.5em;
+  margin: 0 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.item__text {
+  margin: 0 0 8px;
+  font-size: 1em;
+  color: var(--color-text-secondary, #595959);
+
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
