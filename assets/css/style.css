@@ -12,20 +12,40 @@ body {
 .main {
   display: flex;
   gap: 20px;
-  justify-content: space-between;
+  flex-direction: column;
+}
+
+@media (width >= 920px) {
+  .main {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .block {
 }
 .block--news {
-  margin-top: 52px;
+  margin-top: 32px;
 }
+
+@media (width >= 920px) {
+  .block--news {
+    margin-top: 52px;
+  }
+}
+
 .title {
   margin: 0;
   font-size: 32px;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   color: var(--color-text, #222);
   letter-spacing: 1.4px;
+}
+
+@media (width >= 920px) {
+  .title {
+    margin-bottom: 20px;
+  }
 }
 
 .metaData {
@@ -50,7 +70,7 @@ body {
   border: 1px solid var(--color-bg, #ededed);
   color: var(--color-text-secondary, #595959);
   padding: 10px 15px;
-  border-radius: 4px;
+  border-radius: 8px;
   text-decoration: none;
   transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }

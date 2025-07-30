@@ -9,10 +9,16 @@
 
 .news__image {
   width: 100%;
-  height: 160px;
+  height: 180px;
   object-fit: cover;
   border-radius: 8px;
   margin-bottom: 4px;
+}
+
+@media (width >= 920px) {
+  .news__image {
+    height: 160px;
+  }
 }
 
 .news__title {
@@ -33,8 +39,15 @@
 }
 .news__showMoreContainer {
   text-align: center;
-  margin-top: 16px;
+  margin: 20px 0 40px;
 }
+
+@media (width >= 920px) {
+  .news__showMoreContainer {
+    margin: 18px 0 40px;
+  }
+}
+
 .news__showMore {
   border-radius: 8px;
   display: inline-block;

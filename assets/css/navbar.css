@@ -1,20 +1,36 @@
 .navbar {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 12px 20px;
+  align-items: flex-start;
+  padding: 24px 20px 32px;
+  flex-direction: column;
+  gap: 25px;
+}
+
+@media (width >= 540px) {
+  .navbar {
+    padding: 16px 20px;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+  }
 }
 
 .menu {
   list-style: none;
   display: flex;
   gap: 8px;
+  margin: 0;
+  padding: 0;
 }
+
 .menu__item {
   font-size: 1.2em;
+  display: inline-flex;
 }
 
 .navbar img {
   height: 32px;
   width: auto;
+  display: inline-block;
 }
