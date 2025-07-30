@@ -25,12 +25,12 @@ body {
 .block {
 }
 .block--news {
-  margin-top: 32px;
+  margin: 32px 0 32px;
 }
 
 @media (width >= 920px) {
   .block--news {
-    margin-top: 52px;
+    margin: 52px 0 52px;
   }
 }
 
