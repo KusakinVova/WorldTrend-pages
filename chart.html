@@ -3,17 +3,58 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Главная | Простой сайт</title>
+    <title>Charts | WorldTrend</title>
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="stylesheet" href="./assets/css/varieble.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/navbar.css" />
+    <link rel="stylesheet" href="./assets/css/chart.css" />
   </head>
   <body>
-    <nav class="navbar">
-      <img src="./assets/images/logo.png" alt="WorldTrend" />
-      <a href="index.html">News</a>
-      <a href="chart.html">Charts</a>
+    <nav class="navbar container">
+      <img src="./assets/img/logo.svg" alt="WorldTrend" />
+      <ul class="menu">
+        <li class="menu__item">
+          <a class="link link--active" href="chart.html">Charts</a>
+        </li>
+        <li class="menu__item">
+          <a class="link" href="index.html">News</a>
+        </li>
+      </ul>
     </nav>
-    <main></main>
-    <script src="./assets/js/main.js"></script>
+    <main class="container">
+      <section class="charts">
+        <h1 class="title">Charts</h1>
+        <div class="chartsInfo">
+          <ul class="chartList">
+            <li class="chartList__item">
+              <div class="chart__name">Chart 1</div>
+              <div class="chart__value chart__value--red">136 GB</div>
+            </li>
+            <li class="chartList__item">
+              <div class="chart__name">Chart 2</div>
+              <div class="chart__value chart__value--blue">42 GB</div>
+            </li>
+          </ul>
+        </div>
+        <div class="monthContainer">
+          <button class="buttonArrow buttonArrow--left" id="prev-month">
+            <img src="./assets/img/arrow-right.svg" alt="Arrow Right" />
+          </button>
+          <div class="monthWrapper">
+            <div id="monthList" class="monthList"></div>
+          </div>
+          <button class="buttonArrow buttonArrow--right" id="next-month">
+            <img src="./assets/img/arrow-right.svg" alt="Arrow Right" />
+          </button>
+        </div>
+        <div id="chart-container"></div>
+      </section>
+    </main>
+
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="./assets/js/data-generator.js" defer></script>
+    <script src="./assets/js/chart-config.js" defer></script>
+    <script src="./assets/js/chart.js" defer></script>
   </body>
 </html>

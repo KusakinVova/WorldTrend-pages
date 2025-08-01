@@ -1,9 +1,7 @@
-console.log('Hello, World!')
-
 document.addEventListener('DOMContentLoaded', function () {
   const showMoreButton = document.querySelector('.news__showMore')
   const hiddenItems = document.querySelectorAll('.news__item--hidden')
-
+  if (!showMoreButton || hiddenItems.length === 0) return
   showMoreButton.addEventListener('click', function (e) {
     e.preventDefault() // Предотвращаем переход по ссылке
 
