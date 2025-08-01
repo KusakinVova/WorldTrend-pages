@@ -67,7 +67,7 @@ function getChartConfig(labels, seriesData, month, year) {
       distance: 10,
       positioner: function (labelWidth, labelHeight, point) {
         return {
-          x: point.plotX + labelWidth / 2, // Центрируем тултип по X
+          x: point.plotX - 25 + labelWidth / 2, // Центрируем тултип по X
           y: point.plotY - labelHeight - 10, // Размещаем тултип над точкой, добавляя отступ
         }
       },
