@@ -1,7 +1,7 @@
 const ONE_TERABYTE = 1 * 1024 * 1024 * 1024 * 1024
 
 function getRandomValue() {
-  return Math.floor(Math.random() * ONE_TERABYTE)
+  return Math.floor(Math.random() * ONE_TERABYTE * 0.8) // Генерируем случайное значение до 80% от 1 ТБ
 }
 
 function generateDayLabels(month, year) {
